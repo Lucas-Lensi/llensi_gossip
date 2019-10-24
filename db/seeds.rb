@@ -29,7 +29,7 @@ end
 end
 
 40.times do |index|
-  TagGossip.create(tag: Tag.find(rand(1..0)), gossip: Gossip.find(rand(1..20)))
+  TagGossip.create(tag: Tag.find(rand(1..10)), gossip: Gossip.find(rand(1..20)))
   puts "#{index+1} gossip taggé"
 end
 
